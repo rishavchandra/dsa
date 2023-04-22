@@ -9,7 +9,7 @@ int main(){
     int s = 0;
     int e = rows * cols  - 1;
     int mid = s + (e - s) / 2;
-    int flag = false;
+    bool flag = false;
     while(s <= e){
         int rowIndex = mid / cols;
         int colIndex = mid % cols;
