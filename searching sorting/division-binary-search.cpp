@@ -10,7 +10,8 @@ int main(){
     int ans = 0;
     while(s <= e){
         if(abs(mid*divisor) == abs(dividend)){
-            ans = mid;
+            cout << mid;
+            break;
         }
         else if(abs(mid*divisor) < abs(dividend)){
             e = mid-1;
