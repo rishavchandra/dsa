@@ -6,11 +6,21 @@ int pivot(vector<int> arr){
     int e=arr.size()-1;
     int mid = s + (e-s)/2;
     while(s <= e){
-        if(s == e) return s;
-        if(mid <= e && arr[mid] > arr[mid+1]) return mid;
-        if(mid-1 >= s && arr[mid-1] > arr[mid]) return mid-1;
-        if(arr[s] > arr[mid]) e = mid-1;
-        else s = mid+1;
+        if(s == e){
+            return s;
+        } 
+        if(mid <= e && arr[mid] > arr[mid+1]){
+            return mid;
+        }
+        if(mid-1 >= s && arr[mid-1] > arr[mid]){
+            return mid-1;
+        }
+        if(arr[s] > arr[mid]){
+            e = mid-1;
+        }
+        else{
+            s = mid+1;
+        }
         mid = s + (e-s)/2;
     }
     return -1;
@@ -19,9 +29,15 @@ int pivot(vector<int> arr){
 int binarySearch(vector<int>& arr, int s, int e, int target){
     int mid = s + (e-s)/2;
     while(s<=e){
-        if(arr[mid] == target) return mid;
-        else if(arr[mid] > target) e = mid-1;
-        else s = mid + 1;
+        if(arr[mid] == target){
+            return mid;
+        }
+        else if(arr[mid] > target){
+            e = mid-1;
+        }
+        else{
+            s = mid + 1;
+        }
         mid = s + (e-s)/2;
     }
     return -1;
