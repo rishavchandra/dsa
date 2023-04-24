@@ -2,8 +2,10 @@
 using namespace std;
              
 int main(){
-    string haystack = "sadbutsad";
-    string needle = "sad";
+    string haystack;
+    string needle;
+    cin >> haystack;
+    cin >> needle;
     int index = haystack.find(needle);
     if(index != string::npos){
         cout << index;
