@@ -2,8 +2,8 @@
 using namespace std;
              
 int main(){
-    int dividend = 20;
-    int divisor = 6;
+    int dividend, divisor;
+    cin >> dividend >> divisor;
     int s = 0;
     int e = abs(dividend);
     int mid = s + (e-s)/2;
@@ -27,7 +27,6 @@ int main(){
     }
     else{
         cout << -ans;
-    }
-             
+    } 
     return 0;
 }
