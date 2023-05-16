@@ -2,9 +2,8 @@
 using namespace std;
              
 int main(){
-    int target;
+    int target, precision;
     cin >> target;
-    int precision;
     cin >> precision;
     int s = 0;
     int e = target;
