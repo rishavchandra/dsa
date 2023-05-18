@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int arr[] = {1, 5, 12, 68, 98, 33, 4, 16};
-    int size = 8;
+    vector<int> arr{1, 5, 12, 68, 98, 33, 4, 16};
+    int size = arr.size();
     int start = 0, end = size - 1;
 
     while(start <= end){
