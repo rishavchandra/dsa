@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-    int arr[] = {1, 2, 6, 7, 9, 3, 6};
-    int size = 7;
+    vector<int> arr{1, 2, 6, 7, 9, 3, 6};
+    int size = arr.size();
     int maxProfit = 0;
     int buy = arr[0];
     for(int i = 1; i < size; i ++){
