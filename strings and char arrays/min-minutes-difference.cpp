@@ -17,7 +17,9 @@ int main(){
                 minDiff = minutes[i+1] - minutes[i];
             }
         }
-        int lastDiff = minutes[0]+1440 - minutes[minutes.size()-1];
+        int lastDiff1 = minutes[0]+1440 - minutes[minutes.size()-1];
+        int lastDiff2 = minutes[minutes.size()-1] - minutes[0];
+        int lastDiff = min(lastDiff, lastDiff2);
         if(lastDiff < minDiff) minDiff = lastDiff;  
         cout << minDiff;      
              
