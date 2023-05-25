@@ -14,9 +14,9 @@ bool isAnagram(string s, string t) {
             return false;
         }
     }
-    return true;
-        
+    return true;        
 }            
+
 int main(){
     string s = "rat", t = "car";
     cout << isAnagram(s, t);         
