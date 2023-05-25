@@ -8,6 +8,7 @@ bool checkPalindrome(string s, int i, int j){
     }
     return true;
 }
+
 bool validPalindrome(string s) {
     int i = 0;
     int j = s.length()-1;
@@ -20,7 +21,8 @@ bool validPalindrome(string s) {
         }
     }
     return true;
-}            
+} 
+           
 int main(){
     string a = "abca";
     cout << validPalindrome(a);    
