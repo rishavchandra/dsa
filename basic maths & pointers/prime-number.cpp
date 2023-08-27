@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-    if(n == 1) cout << "Not Prime";
+    if(n == 0 || n == 1) cout << "Not Prime";
     else{
         bool isPrime = true;
         for(int i=2; i<n; i++){
